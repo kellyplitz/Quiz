@@ -1,0 +1,8 @@
+cities = [
+    {question: "Jaké je hlavní město Ruska?", choices: ["Vladivostok", "Moskva", "Petrohrad"], correct:2},
+    {question: "Jaké je hlavní město Panamy?", choices: ["San Lucia", "San Paolo", "Panama"], correct: 3},             
+    {question: "Jaké je hlavní město Srbska?", choices: ["Minsk", "Bělorusko", "Bělehrad"], correct: 3}];
+
+presidents = [
+    {question: "Jaký se jmenuje prezident ČR?", choices: ["Zeman", "Havel", "Klaus"], correct:1},
+    {question: "Jak se jmenuje prezident Ruska?", choices: ["Putin", "Ivan", "Dymitrij"], correct: 1}];            

@@ -1,0 +1,141 @@
+/* ==================================================================
+Project name: JavaScript Quiz
+Author: Eliska Plitzova
+================================================================== */
+@import url(_base/normalize.css);
+body {
+  width: 100%;
+  height: 100vh;
+  background: #b899de;
+  background: -webkit-linear-gradient(legacy-direction(to top right), #b899de, #44a4c3);
+  background: linear-gradient(to top right, #b899de, #44a4c3); }
+
+#quiz-wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  height: 100vh; }
+  #quiz-wrapper #quiz {
+    display: grid;
+    width: 700px;
+    height: 500px;
+    grid-template-rows: 132px 1fr;
+    background-color: #f7f8fb;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 0px 30px -10px #000;
+    box-shadow: 0px 0px 30px -10px #000; }
+    @media only screen and (max-width: 800px) {
+      #quiz-wrapper #quiz {
+        width: 350px; } }
+
+#header {
+  display: block;
+  margin: 0;
+  padding: 20px;
+  background-color: white;
+  border-bottom: 2px solid #f7f8fb;
+  border-radius: 6px 6px 0 0;
+  text-align: center; }
+
+#welcome {
+  justify-self: center;
+  align-self: center;
+  width: auto;
+  height: 80px;
+  text-align: center; }
+  #welcome p {
+    font-size: 20px; }
+
+#quiz-form-wrapper {
+  display: none; }
+
+#quiz-form {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: 1fr 1fr repeat(3, 50px) 1fr;
+  align-items: center;
+  margin: 20px 30px;
+  height: calc(100% - 40px); }
+  #quiz-form__question {
+    font-size: 20px;
+    font-weight: 300; }
+  #quiz-form__progress-bar {
+    background-color: #44a4c3;
+    text-align: center;
+    color: white; }
+    #quiz-form__progress-bar.success {
+      background-color: #b899de !important; }
+  #quiz-form .quiz-form__answer {
+    padding: 20px;
+    border: 2px solid #f7f8fb;
+    background-color: white;
+    cursor: pointer; }
+    #quiz-form .quiz-form__answer:nth-child(3n) {
+      border-radius: 6px 6px 0 0;
+      background-clip: padding-box; }
+    #quiz-form .quiz-form__answer:nth-child(3n+2) {
+      border-radius: 0 0 6px 6px;
+      background-clip: padding-box; }
+    #quiz-form .quiz-form__answer span {
+      margin-left: 10px;
+      font-weight: 200; }
+    #quiz-form .quiz-form__answer .selected {
+      color: #44a4c3; }
+  #quiz-form__buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    grid-template-areas: "left right"; }
+    #quiz-form__buttons .btn-back {
+      grid-area: left; }
+    #quiz-form__buttons .btn-next {
+      grid-area: right; }
+    #quiz-form__buttons .btn-finish {
+      grid-area: right;
+      display: none; }
+    #quiz-form__buttons .btn {
+      background-color: #44a4c3; }
+
+#score-wrapper {
+  display: none; }
+  #score-wrapper #score {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 200; }
+    #score-wrapper #score img {
+      width: 150px;
+      margin-top: 20px; }
