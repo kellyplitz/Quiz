@@ -15,7 +15,7 @@ npm install gulp -g
 npm install gulp --save-dev
 ```
 
-Then, you will need bunch of Gulp modules.
+Necessary Gulp modules:
 
 ```
 npm install --save-dev gulp-sass
