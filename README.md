@@ -1,6 +1,6 @@
 # JavaScript Quiz
 
-Dummy project for testing my skills in JavaScript
+Dummy project for testing my skills in JavaScript mainly.
 
 ## Getting Started
 
