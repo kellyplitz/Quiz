@@ -1,0 +1,29 @@
+#quiz-form {
+    &__question {
+        font-size: 20px; 
+        font-weight: 300;
+    }
+
+    &__progress-bar {
+        background-color: $color__primary;
+        &.success{ background-color: $color__secondary !important; } 
+        text-align: center;
+        color: white;
+    }
+
+    .quiz-form__answer {
+        border: 2px solid $gray-light;
+        background-color: white;
+        cursor: pointer;
+
+        span{
+            font-weight: 200;
+        }
+        .selected { color: $color__primary; } 
+        
+    }
+
+    &__buttons {
+        .btn { background-color: $color__primary}
+    }
+}

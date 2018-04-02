@@ -1,0 +1,16 @@
+#quiz-wrapper{
+    @include flexbox;
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include align-items(center);
+    height: 100vh;
+
+    #quiz{
+        display: grid;
+        width: 700px;
+        height: 500px;
+        grid-template-rows: 132px 1fr;
+
+        @media only screen and (max-width: 800px) { width: 350px; }
+    }
+}

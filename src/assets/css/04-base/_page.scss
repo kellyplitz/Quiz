@@ -1,0 +1,6 @@
+body{
+    width: 100%;
+    height: 100vh;
+
+    @include linear-gradient(to top right, $color__secondary, $color__primary);
+}

@@ -9,12 +9,12 @@ var sass = require('gulp-sass'),
     plumber = require('gulp-plumber'),
     browserSync = require('browser-sync'),
     cssmin = require('gulp-cssmin'),
-    imagemin = require('gulp-imagemin')
+    imagemin = require('gulp-imagemin'),
     babel = require('gulp-babel')
 
 // ---------- STYLES ---------------
 gulp.task('styles', function(){
-    gulp.src(['src/assets/css/**/*.scss'])
+    gulp.src(['src/assets/css/*.scss'])
         .pipe(plumber({
             errorHandler: function (error) {
                 console.log(error.message);
@@ -22,9 +22,11 @@ gulp.task('styles', function(){
             }}))
         .pipe(sass())
         .pipe(gulp.dest('dist/assets/css/'))
+
         .pipe(rename({suffix: '.min'}))
         .pipe(cssmin())
         .pipe(gulp.dest('dist/assets/css/'))
+
         .pipe(browserSync.reload({stream: true}))
 
 });
